@@ -61,7 +61,7 @@ class TurbineBladeGen(object):
 		self.te_r = te_r
 		self.N = n_blades
 		self.throat = throat
-		self.n_points = n_points
+		self.n_points = 5*round(n_points/5)  # To make number of points divisible by 5.
 
 		# Initialize parameters.
 		self.x1, self.y1 = None, None
